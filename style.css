@@ -1,0 +1,58 @@
+@font-face {
+  font-family: Rubik;
+  src: url(https://fonts.google.com/specimen/Rubik);
+}
+
+:root {
+  /* Main */
+
+  --paleviolet: hsl(276, 100%, 81%);
+  --modviolet: hsl(276, 55%, 52%);
+  --darkviolet: hsl(271, 15%, 43%);
+  --greyblue: hsl(206, 6%, 79%);
+  --verydarkvio: hsl(271, 36%, 24%);
+  --darkgreyvio: hsl(270, 7%, 64%);
+
+  /* Gradients */
+
+  --lightmagenta: hsl(293, 100%, 63%);
+  --lightviolet: hsl(264, 100%, 61%);
+
+  /* Secondary */
+
+  --white: hsl(0, 0%, 100%);
+  --lightgreyvio: hsl(270, 20%, 96%);
+  --verylightmage: hsl(289, 100%, 72%);
+}
+
+/* Reset formatting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Reset list style */
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  background: var(--white);
+  color: rgb(0, 0, 0);
+  padding: 0rem;
+}
+
+/* Prevent stretching with window */
+@media (min-width: 1440px) {
+  .container {
+    width: 375px;
+    margin: auto;
+  }
+}
