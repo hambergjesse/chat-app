@@ -56,3 +56,23 @@ body {
     margin: auto;
   }
 }
+
+/* Rounded images */
+.avatar img {
+  /* top bar pfp */
+  border-radius: 50%;
+}
+
+.rightmsg img {
+  /* dog images */
+  border-radius: 20%;
+}
+
+/* Phone top bar text */
+.info h1 {
+  color: var(--modviolet);
+}
+
+.info p {
+  color: var(--modviolet);
+}
