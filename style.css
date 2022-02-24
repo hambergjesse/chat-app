@@ -46,26 +46,43 @@ body {
   font-size: 16px;
   background: var(--white);
   color: rgb(0, 0, 0);
-  padding: 0rem;
+  padding: 5rem;
 }
 
-/* Prevent stretching with window */
-@media (min-width: 1440px) {
-  .container {
-    width: 375px;
-    margin: auto;
-  }
+/* Right side title and description */
+.right-text h1 {
+  font-weight: 700;
+  color: var(--verydarkvio);
+}
+
+.right-text p {
+  font-weight: 700;
+  color: var(--darkgreyvio);
+  width: 25rem;
+}
+
+.phone {
+  padding: 1rem;
+  background-color: var(--lightgreyvio);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  width: 25rem;
+  height: auto;
+  text-align: center;
 }
 
 /* Rounded images */
 .avatar img {
   /* top bar pfp */
   border-radius: 50%;
+  border: 5px solid var(--verydarkvio);
+  width: 5rem;
 }
 
 .rightmsg img {
   /* dog images */
   border-radius: 20%;
+  width: 5rem;
 }
 
 /* Phone top bar text */
@@ -75,4 +92,12 @@ body {
 
 .info p {
   color: var(--modviolet);
+}
+
+/* Prevent stretching with window */
+@media (min-width: 1440px) {
+  .container {
+    width: 375px;
+    margin: auto;
+  }
 }
