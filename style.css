@@ -6,12 +6,12 @@
 :root {
   /* Main */
 
-  --paleviolet: hsl(276, 100%, 81%);
-  --modviolet: hsl(276, 55%, 52%);
-  --darkviolet: hsl(271, 15%, 43%);
-  --greyblue: hsl(206, 6%, 79%);
-  --verydarkvio: hsl(271, 36%, 24%);
-  --darkgreyvio: hsl(270, 7%, 64%);
+  --paleviolet: hsl(276, 100%, 81%); /* sub head */
+  --modviolet: hsl(276, 55%, 52%); /* chat left */
+  --darkviolet: hsl(271, 15%, 43%); /* chat right */
+  --greyblue: hsl(206, 6%, 79%); /* placeholder text */
+  --verydarkvio: hsl(271, 36%, 24%); /* main head */
+  --darkgreyvio: hsl(270, 7%, 64%); /* paragraph */
 
   /* Gradients */
 
@@ -21,8 +21,8 @@
   /* Secondary */
 
   --white: hsl(0, 0%, 100%);
-  --lightgreyvio: hsl(270, 20%, 96%);
-  --verylightmage: hsl(289, 100%, 72%);
+  --lightgreyvio: hsl(270, 20%, 96%); /* app background */
+  --verylightmage: hsl(289, 100%, 72%); /* radio button outline */
 }
 
 /* Reset formatting */
@@ -95,6 +95,20 @@ body {
 
 .info p {
   color: var(--modviolet);
+}
+
+/* Message bar */
+.messagebar {
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 2rem;
+  width: 23rem;
+  height: auto;
+  text-align: center;
+}
+
+.messagebar .arrowcircle {
+  background-color: 0;
 }
 
 /* Prevent stretching with window */
