@@ -65,13 +65,32 @@ body {
 }
 
 .phone {
+  /* Flexbox 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-between;
+  */
+  /* Divider */
   padding: 1rem;
   background-color: var(--lightgreyvio);
   border-radius: 1rem;
   margin-bottom: 1rem;
+  border: 0.5rem solid var(--lightmagenta);
   width: 25rem;
   height: auto;
   text-align: center;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: start;
+  padding-bottom: 1rem;
+  gap: 1rem;
 }
 
 /* Rounded images */
