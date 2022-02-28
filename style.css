@@ -326,6 +326,17 @@ body {
   padding-bottom: 0.13rem;
 }
 
+.backgradient {
+  position: absolute;
+  left: -5rem;
+  top: -18rem;
+  z-index: -1;
+  width: 22.5rem;
+  height: 65rem;
+  border-radius: 0% 0% 35rem 0%;
+  background: var(--modviolet);
+}
+
 /* Attribution */
 .attribution {
   color: var(--white);
@@ -347,7 +358,7 @@ body {
   .info-text {
     text-align: left;
   }
-  /* Doesn't fucking work yet */
+  /* Doesn't fucking work yet 
   .body {
     display: flex;
     align-content: flex-start;
@@ -355,13 +366,5 @@ body {
     justify-content: center;
     gap: 10rem;
     padding-top: 12rem;
-  }
-}
-
-/* Prevent stretching with window */
-@media (min-width: 1440px) {
-  .container {
-    width: 375px;
-    margin: auto;
-  }
+  }*/
 }
