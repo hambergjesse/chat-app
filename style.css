@@ -77,6 +77,7 @@ body {
   width: 25rem;
   height: auto;
   text-align: center;
+  box-shadow: 1rem 1rem 3rem var(--greyblue);
 }
 
 /* Top part of phone */
@@ -138,6 +139,13 @@ body {
   margin-bottom: 6rem;
 }
 
+/* top bar pfp */
+.avatar img {
+  border-radius: 50%;
+  border: 0.1rem solid var(--white);
+  width: 2rem;
+}
+
 /* Left 1st messages */
 .firstleftmsg {
   width: 22rem;
@@ -161,14 +169,6 @@ body {
 
 .firstleftmsg p:last-child {
   margin-top: 0rem;
-}
-
-/* Rounded images */
-.avatar img {
-  /* top bar pfp */
-  border-radius: 50%;
-  border: 0.1rem solid var(--white);
-  width: 2rem;
 }
 
 /* Right messages */
@@ -221,17 +221,13 @@ body {
 /* Left purple gradient bars */
 .purplebartext {
   /* flex */
+  color: var(--white);
   display: flex;
-  flex-direction: column;
   justify-content: start;
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: flex-start;
   text-align: left;
-}
-
-.purplebartext .firstbar h1 p {
-  color: var(--white);
 }
 
 .purplebartext .secondcircle,
