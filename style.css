@@ -152,7 +152,7 @@ body {
   margin-right: 8rem;
   text-align: left;
   background-color: rgb(243, 230, 248);
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 1rem 0.25rem;
 }
 
 .firstleftmsg p:first-child {
@@ -171,10 +171,113 @@ body {
   width: 2rem;
 }
 
-.rightmsg img {
+/* Right messages */
+
+.rightmsg p {
+  font-size: 14px;
+  color: var(--verydarkvio);
+  font-weight: 500;
+  padding: 0.75rem;
+  text-align: left;
+  background-color: var(--white);
+  border-radius: 1rem 1rem 0.25rem 1rem;
+}
+
+.rightmsg .rightind p:first-child {
+  margin-left: 8.5rem;
+}
+
+.rightmsg .rightind p:last-of-type {
+  margin-left: 13.5rem;
+}
+
+.rightmsg .doggo img {
   /* dog images */
   border-radius: 20%;
-  width: 3rem;
+  width: 4rem;
+}
+
+.rightmsg .doggo {
+  /* dog images */
+  margin-left: 9rem;
+}
+
+.secondleftmsg {
+  width: 22rem;
+  height: auto;
+  font-size: 14px;
+}
+
+.secondleftmsg p:first-child {
+  color: var(--modviolet);
+  font-weight: 500;
+  padding: 0.75rem;
+  margin-right: 8.75rem;
+  text-align: left;
+  background-color: rgb(243, 230, 248);
+  border-radius: 1rem 1rem 1rem 0.25rem;
+}
+
+/* Left purple gradient bars */
+.purplebartext {
+  /* flex */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  text-align: left;
+}
+
+.purplebartext .firstbar h1 p {
+  color: var(--white);
+}
+
+.purplebartext .secondcircle,
+.purplebartext .firstcircle {
+  background-color: rgba(255, 136, 0, 0);
+  border: 0.1rem solid var(--white);
+  border-radius: 1rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+.purplebartext .firstbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 0.75rem;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 15rem;
+  font-size: 14px;
+  background: linear-gradient(
+    to left,
+    var(--lightmagenta),
+    var(--verylightmage)
+  );
+  border-radius: 1rem 1rem 1rem 0.25rem;
+}
+
+/* second bar */
+.purplebartext .secondbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 0.75rem;
+  padding: 0.75rem;
+  width: 15rem;
+  font-size: 14px;
+  background: linear-gradient(
+    to left,
+    var(--lightmagenta),
+    var(--verylightmage)
+  );
+  border-radius: 1rem 1rem 1rem 0.25rem;
 }
 
 /* Message bar */
