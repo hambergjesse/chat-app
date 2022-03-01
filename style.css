@@ -445,10 +445,10 @@ body {
   .backgradient2 {
     position: absolute;
     right: -19rem;
-    bottom: -25rem;
+    bottom: 0rem;
     z-index: -1;
     width: 45rem;
-    height: 75rem;
+    height: 53rem;
     border-radius: 40rem 40rem 0rem 0%;
     background: var(--modviolet);
     opacity: 5%;
