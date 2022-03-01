@@ -4,8 +4,7 @@
 }
 
 :root {
-  /* Main */
-
+  /* main */
   --paleviolet: hsl(276, 100%, 81%); /* sub head */
   --modviolet: hsl(276, 55%, 52%); /* chat left */
   --darkviolet: hsl(271, 15%, 43%); /* chat right */
@@ -13,19 +12,17 @@
   --verydarkvio: hsl(271, 36%, 24%); /* main head */
   --darkgreyvio: hsl(270, 7%, 64%); /* paragraph */
 
-  /* Gradients */
-
+  /* gradients */
   --lightmagenta: hsl(293, 100%, 63%);
   --lightviolet: hsl(264, 100%, 61%);
 
-  /* Secondary */
-
+  /* secondary */
   --white: hsl(0, 0%, 100%);
   --lightgreyvio: hsl(270, 20%, 96%); /* app background */
   --verylightmage: hsl(289, 100%, 72%); /* radio button outline */
 }
 
-/* Reset formatting */
+/* reset formatting */
 * {
   margin: 0;
   padding: 0;
@@ -40,19 +37,6 @@ img {
   max-width: 100%;
 }
 
-/* Reset list style */
-ul {
-  list-style-type: none;
-}
-
-/* main {
-  display: 0;
-  flex-direction: 0;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10rem;
-} */
-
 body {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
@@ -65,7 +49,7 @@ body {
   display: flex;
 }
 
-/* Right side title and description */
+/* right side title and description */
 .info-text {
   color: 0;
 }
@@ -84,7 +68,7 @@ body {
   line-height: 1.6rem;
 }
 
-/* Phone */
+/* phone */
 .phone {
   padding: 1rem;
   background-color: var(--lightgreyvio);
@@ -97,8 +81,7 @@ body {
   box-shadow: 1rem 1rem 3rem #cecece;
 }
 
-/* Top part of phone */
-
+/* top part of phone */
 .topbar {
   position: relative;
   display: flex;
@@ -172,7 +155,7 @@ body {
   cursor: pointer;
 }
 
-/* Left 1st messages */
+/* left 1st messages */
 .firstleftmsg {
   width: 22rem;
   height: auto;
@@ -197,7 +180,7 @@ body {
   margin-top: 0rem;
 }
 
-/* Right messages */
+/* right messages */
 
 .rightmsg p {
   font-size: 14px;
@@ -245,9 +228,8 @@ body {
   border-radius: 1rem 1rem 1rem 0.25rem;
 }
 
-/* Left purple gradient bars */
+/* left purple gradient bars */
 .purplebartext {
-  /* flex */
   color: var(--white);
   display: flex;
   justify-content: start;
@@ -323,7 +305,7 @@ body {
   padding-left: 3.5rem;
 }
 
-/* Element box shadows */
+/* inner box shadows */
 .firstleftmsg p,
 .doggo img,
 .rightind p,
@@ -335,7 +317,7 @@ body {
   box-shadow: 0.25rem 0.25rem 1rem #e0e0e0;
 }
 
-/* Message bar */
+/* message bar */
 .messagebar {
   display: flex;
   align-content: center;
@@ -377,7 +359,7 @@ body {
   padding-bottom: 0.13rem;
 }
 
-/* Background gradient shape */
+/* background gradient shape */
 .backgradient {
   position: absolute;
   left: -5rem;
@@ -393,19 +375,20 @@ body {
   );
 }
 
-/* Attribution */
+/* attribution */
 .attribution {
   color: var(--white);
-  padding-top: 1rem;
+  padding-top: 1.3rem;
   font-size: 11px;
   text-align: center;
-}
-
-.attribution a {
   color: var(--verylightmage);
 }
 
-/* Media shit */
+.attribution a {
+  color: var(--modviolet);
+}
+
+/* media shit */
 @media screen and (orientation: portrait) {
   .info-text {
     text-align: center;
@@ -417,6 +400,7 @@ body {
     gap: 0rem;
   }
 }
+
 @media screen and (orientation: landscape) {
   .info-text {
     text-align: left;
