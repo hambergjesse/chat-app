@@ -61,6 +61,10 @@ body {
   padding: 5rem;
 }
 
+.arrangement {
+  display: flex;
+}
+
 /* Right side title and description */
 .info-text {
   color: 0;
@@ -382,7 +386,11 @@ body {
   width: 22.5rem;
   height: 65rem;
   border-radius: 0% 0% 35rem 0%;
-  background: var(--modviolet);
+  background: linear-gradient(
+    45deg,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%) 100%
+  );
 }
 
 /* Attribution */
@@ -402,9 +410,47 @@ body {
   .info-text {
     text-align: center;
   }
+  .arrangement {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 0rem;
+  }
 }
 @media screen and (orientation: landscape) {
   .info-text {
     text-align: left;
+    bottom: 0;
+  }
+  .info-text p {
+    width: 27rem;
+  }
+  .info-text h1 {
+    padding-top: 0rem;
+  }
+  .arrangement {
+    margin-left: 25rem;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    gap: 10rem;
+  }
+  .backgradient {
+    position: absolute;
+    left: -8.32rem;
+    width: 45rem;
+    height: 75rem;
+    border-radius: 0% 0% 40rem 40rem;
+  }
+  .backgradient2 {
+    position: absolute;
+    right: -19rem;
+    bottom: -25rem;
+    z-index: -1;
+    width: 45rem;
+    height: 75rem;
+    border-radius: 40rem 40rem 0rem 0%;
+    background: var(--modviolet);
+    opacity: 5%;
   }
 }
